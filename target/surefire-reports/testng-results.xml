@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Newtours Suite" duration-ms="45480" started-at="2018-11-11T09:47:58Z" finished-at="2018-11-11T09:48:44Z">
+    <groups>
+    </groups>
+    <test name="HomePage Test" duration-ms="45480" started-at="2018-11-11T09:47:58Z" finished-at="2018-11-11T09:48:44Z">
+      <class name="com.newtours.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.newtours.qa.testcases.HomePageTest@3fb6a447]" name="setUp" is-config="true" duration-ms="37092" started-at="2018-11-11T09:47:58Z" finished-at="2018-11-11T09:48:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkTabnameTest()[pri:1, instance:com.newtours.qa.testcases.HomePageTest@3fb6a447]" name="checkTabnameTest" duration-ms="21" started-at="2018-11-11T09:48:35Z" finished-at="2018-11-11T09:48:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTabnameTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.newtours.qa.testcases.HomePageTest@3fb6a447]" name="tearDown" is-config="true" duration-ms="615" started-at="2018-11-11T09:48:35Z" finished-at="2018-11-11T09:48:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.newtours.qa.testcases.HomePageTest -->
+      <class name="com.newtours.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.newtours.qa.testcases.LoginPageTest@79b4d0f]" name="setUp" is-config="true" duration-ms="7080" started-at="2018-11-11T09:48:36Z" finished-at="2018-11-11T09:48:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginpagetitleTest()[pri:1, instance:com.newtours.qa.testcases.LoginPageTest@79b4d0f]" name="loginpagetitleTest" duration-ms="14" started-at="2018-11-11T09:48:43Z" finished-at="2018-11-11T09:48:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpagetitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.newtours.qa.testcases.LoginPageTest@79b4d0f]" name="tearDown" is-config="true" duration-ms="598" started-at="2018-11-11T09:48:43Z" finished-at="2018-11-11T09:48:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.newtours.qa.testcases.LoginPageTest -->
+    </test> <!-- HomePage Test -->
+  </suite> <!-- Newtours Suite -->
+</testng-results>
