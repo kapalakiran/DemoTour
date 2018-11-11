@@ -1,5 +1,6 @@
 package com.newtours.qa.testcases;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -13,6 +14,9 @@ public class LoginPageTest extends TestBase{
 	
 	LoginPage lp;
 	HomePage hm;
+	//Logger log =  Logger.getLogger(LoginPageTest.class);
+	Logger log = Logger.getLogger(LoginPageTest.class);
+	
 	public LoginPageTest()
 	{
 		super();
@@ -23,6 +27,7 @@ public class LoginPageTest extends TestBase{
 	{
 		initialzation();
 		lp = new LoginPage();
+		log.info("User has been logged in");
 		
 	}
 	
@@ -31,6 +36,7 @@ public class LoginPageTest extends TestBase{
 	{
 		String tabname = lp.validateTabName();
 		Assert.assertEquals(tabname,"Welcome: Mercury Tours");	
+		log.warn("Tab Name comparison test is completed");
 	}
 	
 	@Test(priority=2)

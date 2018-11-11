@@ -1,89 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Newtours Suite" duration-ms="89828" started-at="2018-11-11T04:10:27Z" finished-at="2018-11-11T04:11:57Z">
+  <suite name="Default suite" duration-ms="27893" started-at="2018-11-11T09:57:50Z" finished-at="2018-11-11T09:58:18Z">
     <groups>
     </groups>
-    <test name="HomePage Test" duration-ms="70099" started-at="2018-11-11T04:10:27Z" finished-at="2018-11-11T04:11:37Z">
-      <class name="com.newtours.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.newtours.qa.testcases.HomePageTest@42d80b78]" name="setUp" is-config="true" duration-ms="33895" started-at="2018-11-11T04:10:27Z" finished-at="2018-11-11T04:11:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkTabnameTest()[pri:1, instance:com.newtours.qa.testcases.HomePageTest@42d80b78]" name="checkTabnameTest" duration-ms="26" started-at="2018-11-11T04:11:01Z" finished-at="2018-11-11T04:11:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkTabnameTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.newtours.qa.testcases.HomePageTest@42d80b78]" name="tearDown" is-config="true" duration-ms="585" started-at="2018-11-11T04:11:01Z" finished-at="2018-11-11T04:11:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.newtours.qa.testcases.HomePageTest@42d80b78]" name="setUp" is-config="true" duration-ms="11153" started-at="2018-11-11T04:11:01Z" finished-at="2018-11-11T04:11:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="itineraryTest()[pri:2, instance:com.newtours.qa.testcases.HomePageTest@42d80b78]" name="itineraryTest" duration-ms="651" started-at="2018-11-11T04:11:13Z" finished-at="2018-11-11T04:11:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- itineraryTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.newtours.qa.testcases.HomePageTest@42d80b78]" name="tearDown" is-config="true" duration-ms="620" started-at="2018-11-11T04:11:13Z" finished-at="2018-11-11T04:11:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.newtours.qa.testcases.HomePageTest@42d80b78]" name="setUp" is-config="true" duration-ms="9969" started-at="2018-11-11T04:11:14Z" finished-at="2018-11-11T04:11:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="profilePageTest()[pri:3, instance:com.newtours.qa.testcases.HomePageTest@42d80b78]" name="profilePageTest" duration-ms="1017" started-at="2018-11-11T04:11:24Z" finished-at="2018-11-11T04:11:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- profilePageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.newtours.qa.testcases.HomePageTest@42d80b78]" name="tearDown" is-config="true" duration-ms="602" started-at="2018-11-11T04:11:25Z" finished-at="2018-11-11T04:11:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.newtours.qa.testcases.HomePageTest@42d80b78]" name="setUp" is-config="true" duration-ms="9758" started-at="2018-11-11T04:11:25Z" finished-at="2018-11-11T04:11:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="signOnPageTest()[pri:4, instance:com.newtours.qa.testcases.HomePageTest@42d80b78]" name="signOnPageTest" duration-ms="1167" started-at="2018-11-11T04:11:35Z" finished-at="2018-11-11T04:11:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signOnPageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.newtours.qa.testcases.HomePageTest@42d80b78]" name="tearDown" is-config="true" duration-ms="602" started-at="2018-11-11T04:11:36Z" finished-at="2018-11-11T04:11:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.newtours.qa.testcases.HomePageTest -->
-    </test> <!-- HomePage Test -->
-    <test name="LoginPage Test" duration-ms="19472" started-at="2018-11-11T04:11:37Z" finished-at="2018-11-11T04:11:57Z">
+    <test name="Default test" duration-ms="27893" started-at="2018-11-11T09:57:50Z" finished-at="2018-11-11T09:58:18Z">
       <class name="com.newtours.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.newtours.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="6960" started-at="2018-11-11T04:11:37Z" finished-at="2018-11-11T04:11:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.newtours.qa.testcases.LoginPageTest@5ec0a365]" name="setUp" is-config="true" duration-ms="8021" started-at="2018-11-11T09:57:50Z" finished-at="2018-11-11T09:57:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginpagetitleTest()[pri:1, instance:com.newtours.qa.testcases.LoginPageTest@5f341870]" name="loginpagetitleTest" duration-ms="28" started-at="2018-11-11T04:11:44Z" finished-at="2018-11-11T04:11:44Z">
+        <test-method status="PASS" signature="loginpagetitleTest()[pri:1, instance:com.newtours.qa.testcases.LoginPageTest@5ec0a365]" name="loginpagetitleTest" duration-ms="21" started-at="2018-11-11T09:57:58Z" finished-at="2018-11-11T09:57:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpagetitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.newtours.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="593" started-at="2018-11-11T04:11:44Z" finished-at="2018-11-11T04:11:45Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.newtours.qa.testcases.LoginPageTest@5ec0a365]" name="tearDown" is-config="true" duration-ms="584" started-at="2018-11-11T09:57:58Z" finished-at="2018-11-11T09:57:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.newtours.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="6868" started-at="2018-11-11T04:11:45Z" finished-at="2018-11-11T04:11:52Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.newtours.qa.testcases.LoginPageTest@5ec0a365]" name="setUp" is-config="true" duration-ms="8998" started-at="2018-11-11T09:57:59Z" finished-at="2018-11-11T09:58:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logincrendialTest()[pri:2, instance:com.newtours.qa.testcases.LoginPageTest@5f341870]" name="logincrendialTest" duration-ms="4428" started-at="2018-11-11T04:11:52Z" finished-at="2018-11-11T04:11:56Z">
+        <test-method status="PASS" signature="logincrendialTest()[pri:2, instance:com.newtours.qa.testcases.LoginPageTest@5ec0a365]" name="logincrendialTest" duration-ms="9635" started-at="2018-11-11T09:58:08Z" finished-at="2018-11-11T09:58:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logincrendialTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.newtours.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="582" started-at="2018-11-11T04:11:56Z" finished-at="2018-11-11T04:11:57Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.newtours.qa.testcases.LoginPageTest@5ec0a365]" name="tearDown" is-config="true" duration-ms="587" started-at="2018-11-11T09:58:17Z" finished-at="2018-11-11T09:58:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.newtours.qa.testcases.LoginPageTest -->
-    </test> <!-- LoginPage Test -->
-  </suite> <!-- Newtours Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

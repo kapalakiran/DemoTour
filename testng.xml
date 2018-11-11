@@ -8,12 +8,8 @@
 	<test  name="HomePage Test">
 		<classes>
 			<class name="com.newtours.qa.testcases.HomePageTest" />
+			<class name="com.newtours.qa.testcases.LoginPageTest" />
 		</classes>
 	</test>
 	
-	<test  name="LoginPage Test">
-		<classes>
-			<class name="com.newtours.qa.testcases.LoginPageTest" />
-		</classes>
-	</test>  
 </suite> 
