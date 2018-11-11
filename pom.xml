@@ -21,7 +21,7 @@
 			<version>2.4.2</version>
 			<configuration>
 				<suiteXmlFiles>
-					<suiteXmlFiles>C:\Users\Kiran\git\testng.xml</suiteXmlFiles>
+					<suiteXmlFiles>testng.xml</suiteXmlFiles>
 				</suiteXmlFiles>
 			</configuration>
 		</plugin>
