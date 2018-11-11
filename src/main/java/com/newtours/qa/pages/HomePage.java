@@ -55,9 +55,7 @@ public class HomePage extends TestBase{
 		return new ProfilePage();
 	}
 	
-	public boolean fnameButton()
-	{
-		return FnameTextButton.isDisplayed();
-	}
+	
+	
 }
 
