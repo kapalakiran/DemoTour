@@ -15,9 +15,9 @@ import com.newtours.qa.pages.SignOnPage;
 public class HomePageTest extends TestBase{
 	LoginPage lp;
 	HomePage hmp;
-	ItineraryPage Itn;
-	ProfilePage pp;
-	SignOnPage sop;
+	ItineraryPage Itn = new ItineraryPage();
+	ProfilePage pp = new ProfilePage();
+	SignOnPage sop ;
 	public HomePageTest()
 	{
 		super();
@@ -33,37 +33,38 @@ public class HomePageTest extends TestBase{
     	
     }
     
-    @Test(priority=1)
+    @Test(priority=1 , enabled=false)
     public void checkTabnameTest()
     {
     	String title = hmp.verifyHomePageTitle();
     	Assert.assertEquals(title , "Find a Flight: Mercury Tours:" ,"Tab Name are not matched");
     }
     
-    @Test(priority=2)
+    @Test(priority=2 , enabled=false)
     public void itineraryTest()
     {
     	hmp.clickOnItinerary();
     	//Assert.assertTrue
-      	//Assert.assertTrue(Itn.itnimgDisplay());
+      	Assert.assertTrue(Itn.itnimgDisplay());
     	//boolean imgdisp = Itn.itnimgDisplay();
     	//Assert.assertEquals(imgdisp, 1);
     }
     
-    @Test(priority=3)
+    @Test(priority=3 , enabled=false)
     public void profilePageTest()
     {
     	hmp.clickOnProfile();
     	//Assert.assertTrue(pp.profilepageCheck());
-    	//boolean profpge = pp.profilepageCheck();
-    	//Assert.assertEquals(profpge, 1);
+    	boolean profpge = pp.profilepageCheck();
+    	Assert.assertEquals(profpge, true);
     }
     
-    @Test(priority=4)
+    @Test(priority=4 )
     public void signOnPageTest()
     {
     	hmp.clickOnSignoff();
-    	//Assert.assertTrue(sop.checkSignOnImg());
+    	sop=new SignOnPage();
+    	Assert.assertTrue(sop.checkSignOnImg());
     	//boolean signingoff = sop.checkSignOnImg();
     	//Assert.assertEquals(signingoff, 1);
     }

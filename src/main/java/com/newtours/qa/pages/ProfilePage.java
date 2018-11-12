@@ -14,6 +14,7 @@ public class ProfilePage extends TestBase{
 	public ProfilePage()
 	{
 		PageFactory.initElements(driver, this);
+		//PageFactory.initElements(driver, ProfilePage.class);
 	}
 	
 	public boolean profilepageCheck()

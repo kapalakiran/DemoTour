@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
@@ -21,18 +22,18 @@ public class TestBase {
 	public static Properties prop;
 	public  static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
-	
+
 	public TestBase()
 	{
- 
+
 		BasicConfigurator.configure();
-		
+
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "./src/main/java/com/newtours/qa/config/config.properties");
 			prop.load(ip);
-		   } 
-	
+		} 
+
 		catch(FileNotFoundException e)
 		{
 			System.out.println("File not found error");
@@ -42,12 +43,12 @@ public class TestBase {
 		{
 			e.printStackTrace();
 		}
-	 }
+	}
 
 
 	public static void initialzation()
 	{
-		
+
 
 		String browserName = prop.getProperty("browser");
 		if(browserName.contains("chrome"))
@@ -55,33 +56,42 @@ public class TestBase {
 			System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 			driver = new ChromeDriver();
 			System.out.println(driver);
-			
+
 		}
 		else if(browserName.contains("mozilla"))
 		{
 			System.setProperty("webdriver.gecko.driver","./driver/geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
-		
+		else if(browserName.contains("chro-headless"))
+		{
+			System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
+			options.addArguments("window-size=1200x600");
+
+			driver = new ChromeDriver(options);
+		}
+
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
 		driver = e_driver;
-		
-		
+
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		
+
 		driver.get(prop.getProperty("url"));
 
 	}
-/*
+	/*
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
-		
+
 		if(browserName.equals("chrome")){
 			System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");	
 			driver = new ChromeDriver(); 
@@ -90,22 +100,22 @@ public class TestBase {
 			System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Documents/SeleniumServer/geckodriver");	
 			driver = new FirefoxDriver(); 
 		}
-		
-		
+
+
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
 		driver = e_driver;
-		
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		
+
 		driver.get(prop.getProperty("url"));
-		
+
 	}
- */
+	 */
 
 }
