@@ -5,11 +5,16 @@
 	<listeners>
 		<listener class-name="com.qa.ExtentReportListener.ExtentReportListener" />
 	</listeners>
-	<test  name="HomePage Test">
+
+	<listeners>
+		<listener class-name="com.newtours.qa.testnglistener.TestNGListener" />
+	</listeners>
+
+	<test name="HomePage Test">
 		<classes>
 			<class name="com.newtours.qa.testcases.HomePageTest" />
 			<class name="com.newtours.qa.testcases.LoginPageTest" />
 		</classes>
 	</test>
-	
+
 </suite> 
